@@ -1,0 +1,84 @@
+<!doctype html> <!-- This is a comment tag, needs the dashes and ! to make -->
+
+<html>
+    <head>
+        <title>My Webpage</title>
+    </head>
+
+    <body>
+    </body>
+</html>
+
+<!--
+TAGS
+    title = changes the title that is read by the tab on your web browser
+    br = break, used for newline and keeps the two closed together vs how p does it.
+    p = paragraph, wraps your stuff and lets you modify its settings.
+    hX = header X, with 1 being the biggest and going on for several levels
+        with anything beyond h5 being smaller than normal text.
+    hr = Adds a horizontal line, which helps seperate sections.
+    ul = Unordered list (Bullet List)
+        li = list item
+    ol = Ordered list (Numbered List)
+        li = list item
+        inside <>
+            start="number" = where to start the numbered list
+            reversed = counts down not up
+            type="type" = change from numbered list to something else like "A B C D"
+                or "I II III IV"
+    img = image, it is self closing so doesn't need a </img>, uses stuff inside <>
+        src = source, where to pull the image from, can also use image address
+        width = scale the image based on pixels, scales if only width or height used
+        align (might be deprecated) = change the alignment
+    form = interactable form for people
+        input = input, self closing tag
+            type="thing" = gives a box based on the input type (text, checkbox, radio, submit, etc.)
+        name = a way to link tags together
+        select = gives you a dropdown menu
+            options = gives you the options of that dropdown
+    table = way to present data is an excel spreadsheet esque way
+        tbody = table body    
+            tr = table row
+                td = table data
+        thead = table head
+            tr = table row
+                th = table heading
+    a = anchor that is used to define hyperlinks. Needs to surround whatever is the link button/text
+    video = a way to add a video player onto your page
+        source src="videopath" type="the format" == the stuff you need for your video player
+        controls = need to just have that attribute, no = or anything, in video to enable controls
+    audio = works in basically the same way as video, with similar attribute/options
+        type = only change is that it is "audio/mpeg" instead of "video/mp4" that video uses
+
+    
+ATTRIBUTES
+    value = attribute that sets a default value or overwrites a value already there, may
+        also be useful for when coding later to know if something was checked or not
+    placeholder = attribute that does something like the faded name in username field
+    selected = attribute to aid in selected the default option is lists/forms
+    href = reference to a website or link you want to go to
+        -Can use relative links so that a. you don't have to list the whole address and b. you can link to
+            your own webpages in the same folder.
+        -Can designate the id by doing "#id" to go to places in the same page
+    id = give to stuff which is useful for code or things like goto
+
+TEXT CHANGES
+    b OR strong = bold whatever they surround
+    i OR em (emphasized) = italics whatever they surroud
+    u OR ins(inserted) = underlines whatever they surround
+    sup = superscript whatever they surround
+    sub = subscript whatever they surround
+    del (used to be strike in HTML4) = put a line through whatever they surround
+
+INFO
+    -If you put keywords into you h1 tag, it ends up being more discoverable by
+        search engines like Google, since they scrape website info for that stuff.
+    -For more tags Google "html formatting"
+    -Pulling an image via address link is known as HOT LINKING, and is generally
+        frowned upon by web devs as you are creating traffic on their end and taking
+        their image. Just put it on your own server.
+    -Google html entites to find the specific "escape characters" for each tag/attribute/thing
+        -useful for when you need certain symbols or things not on an american keyboard
+    -For video the best format is mp4 since it has the most widespread support by browsers
+    -For audio the best format is mp3 since it has the most widespread support by browsers
+-->
