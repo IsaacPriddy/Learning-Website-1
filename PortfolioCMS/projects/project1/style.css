@@ -1,4 +1,4 @@
-/* style.css */
+/* project1/style.css */
 
 body {
     font-family: 'Arial', sans-serif;
@@ -16,40 +16,9 @@ header {
     text-align: center;
 }
 
-.container {
-    display: flex;
-    flex: 1;
-}
-
-nav {
-    flex-basis: 20%;
-    background-color: #eee;
-    padding: 1rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.25rem;
-    padding-right: 0.5rem;
-    display: block;
-    white-space: nowrap;
-}
-
-nav a:hover {
-    background-color: #ddd;
-}
-
 main {
     flex-grow: 1;
     padding: 2rem;
-    position: relative;
-}
-
-main p {
-    text-indent: 5%;
 }
 
 footer {
