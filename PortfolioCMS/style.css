@@ -1,0 +1,77 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    flex-basis: 20%; /* Adjust the width of the left column */
+    background-color: #eee;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines */
+    color: #333;
+    /* Instead of just padding as I wanted to adjust left right independently */
+    padding-top: 0.5rem; /* Adjust top padding */
+    padding-bottom: 0.5rem; /* Adjust bottom padding */
+    padding-left: 0.25rem; /* Adjust left padding */
+    padding-right: 0.5rem; /* Adjust right padding */
+
+    display: block; /* Ensures the entire link is clickable */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+nav a:hover {
+    background-color: #ddd; /* Change background color on hover */
+}
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+/* Add the following styles for the spacer */
+main::after {
+    content: "";
+    flex-basis: 20%; /* Adjust the width of the spacer */
+    background-color: #eee; /* Set the same background color as the nav section */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* For the linked pages so that the home button does not have an underline or color change */
+header h1 a {
+    text-decoration: none; /* Remove underlines */
+    color: #fff; /* Set default link color */
+}
+
+header h1 a:hover {
+    background-color: transparent; /* Remove hover background color */
+}
